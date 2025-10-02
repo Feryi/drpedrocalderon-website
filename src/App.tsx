@@ -1,11 +1,26 @@
-function App() {
-  return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <h1 className="text-3xl font-bold text-blue-600">
-        Sitio del Dr. [Nombre del Cliente] en construcción
-      </h1>
-    </div>
-  )
-}
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Procedures from './components/Procedures';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
-export default App
+const App: React.FC = () => {
+  return (
+    <div className="bg-white text-gray-800 antialiased">
+      <Navbar />
+      <main>
+        <Hero />
+        <Procedures />
+        <About />
+        <Contact />
+      </main>
+      <WhatsAppButton />
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
