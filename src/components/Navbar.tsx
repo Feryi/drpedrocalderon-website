@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { title: 'Inicio', id: 'inicio' },
-    { title: 'Procedimientos', id: 'procedimientos' },
+    { title: 'Padecimientos', id: 'procedimientos' },
     { title: 'Acerca de mí', id: 'acerca' },
     { title: 'Contacto', id: 'contacto' },
   ];
@@ -34,8 +34,8 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-gray-800">
-          Dr. Pedro Calderón
+        <div className="text-xl font-bold text-gray-800">
+          Dr. Pedro C. Calderón
         </div>
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
